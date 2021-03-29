@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+    * {box-sizing: border-box;}
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #e9e9e9;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #0eaba8;
+      color: white;
+    }
+
+    .topnav .search-container {
+      float: right;
+    }
+
+    .topnav input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+    }
+
+    .topnav .search-container button {
+      float: right;
+      padding: 6px 10px;
+      margin-top: 8px;
+      margin-right: 16px;
+      background: #ddd;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .topnav .search-container button:hover {
+      background: #ccc;
+    }
+
+    .board1{margin:10px 50px 10px;position:relative;padding:10px 0px 0px;border-top:1px solid #f5f5f5;}
+    .infos{height:216px;font-size:0px;margin:12px 0px;border-bottom:2px solid #f5f5f5;padding-bottom:32px;}
+
+    .board1_left{width:50%;height:108px;display:inline-block;vertical-align:top;padding:3px 0px;}
+
+    .board1_left_item{height:34px;position:relative;padding-left:120px;margin-right:48px;}
+
+    .board1_left_item strong{font-size:18px;line-height:34px;width:120px;display:inline-block;vertical-align:top;color:#4dd196;position:absolute;left:0px;top:0px;}
+    .board1_left_item .jdw{height:10px;border-radius:6px;width:100%;background:#ebfbf4;position: relative;top:12px;}
+    .board1_left_item .jdw .jd{height:10px;border-radius:6px;background:#4dd196;display:inline-block;vertical-align:top;}
+
+    .tips{font-size:16px;line-height:36px;color:#4dd196;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600;}
+
+    
+    video {
+      width: 90%;
+      height: auto;
+    }
+
+    hr.rounded {
+      border-top: 8px solid #bbb;
+      border-radius: 5px;
+    }
+    .ex1 {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    .ex2{margin-left: 30px;}
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .row {
+      display: flex;
+    }
+/* 5 equal column in a row*/
+    .column {
+      flex: 20%;
+      padding: 5px;
+    }
+
+  </style>
+
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
+
+
+<title>Annie's kitchen</title>
+
+</head>
+
+<body>
+  <!-- top navigator and buttons-->
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <h1 class="ex1"><b>Tiramisu cake</b></h1>
+
+  <span class="ex1">by Cooking Spring</span>
+
+
+  <!-- top left data bars-->
+<div class="board1">
+    <div class="tips"></div>
+    <div class="infos">
+      <div class="board1_left">
+        <div class="board1_left_item">
+          <strong>Calories</strong><div class="jdw"><div class="jd" style="width:100%;"></div></div>
+        </div>
+        <div class="board1_left_item">
+          <strong>Carbohydrate</strong><div class="jdw"><div class="jd" style="width:49%;"></div></div>
+        </div>
+        <div class="board1_left_item">
+          <strong>Fat</strong><div class="jdw"><div class="jd" style="width:49%;"></div></div>
+        </div>
+        <div class="board1_left_item">
+          <strong>Protein</strong><div class="jdw"><div class="jd" style="width:5%;"></div></div>
+        </div>
+        <div class="board1_left_item">
+          <strong>Calcium</strong><div class="jdw"><div class="jd" style="width:2.9%;"></div></div>
+        </div>
+        <div class="board1_left_item">
+          <strong>Iron</strong><div class="jdw"><div class="jd" style="width:5%;"></div></div>
+        </div>
+      </div>
+      
+    </div>
+
+  <!-- 5 icons placed in equal width-->
+<div class="row">
+  <div class="column">
+    <img src="icon1.png" alt="icon1" style="width:60%">
+  </div>
+  <div class="column">
+    <img src="icon2.png" alt="icon2" style="width:60%">
+  </div>
+  <div class="column">
+    <img src="icon3.png" alt="icon3" style="width:60%">
+  </div>
+    <div class="column">
+    <img src="icon4.png" alt="icon4" style="width:60%">
+  </div>
+    <div class="column">
+    <img src="icon5.png" alt="icon5" style="width:60%">
+  </div>
+</div>
+
+  <!-- ingredient table image-->
+<img src="table.png" alt="table" width ="100%">
+
+  <!-- divider1-->
+<hr class="rounded">
+
+  <!-- video-->
+<video class="center" width="350" controls>
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+  <!-- divider2-->
+<hr class="rounded">
+
+
+  <!-- 3 images that can click on and enlarged-->
+<div class="w3-row-padding">
+  <div class="w3-container w3-third">
+    <img src="view1.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-third">
+    <img src="view2.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-third">
+    <img src="view3.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+</div>
+
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100%">
+  </div>
+</div>
+
+  <!-- Steps -->
+<h2 class ="ex2"> Step 1</h2>
+<p class="ex1">Mix 60ml warm milk, 3g instant coffee and 3g cocoa powder together.</p>
+
+<h2 class ="ex2"> Step 2</h2>
+<p class="ex1">In another bowl mix 3 egg yolks, 15g granulated sugar, 1/4 tsp of salt and 30 ml corn oil together. Then put in the coffee mixture.</p>
+
+<h2 class ="ex2"> Step 3</h2>
+<p class="ex1">Mix well 60g cake flour, 2g baking powder into the coffee mixture. </p>
+
+<h2 class ="ex2"> Step 4</h2>
+<p class="ex1">Whip 3 egg white until soft peaks form(tips curl), while whipping, gradually add in 30g granulated sugar. </p>
+
+<h2 class ="ex2"> Step 5</h2>
+<p class="ex1">Mix egg white paste well with coffee paste in several times.</p>
+
+<h2 class ="ex2"> Step 6</h2>
+<p class="ex1">Put the well combined paste in cake mold, bake at 165°C degrees for 40-45 minutes. </p>
+
+<h2 class ="ex2"> Step 7</h2>
+<p class="ex1">While waiting, mix 100g mascarpone cheese and 30g granulated sugar. Then add 150g heavy milk with 1 tsp of vanilla extract. Whip the cream until soft peaks form. </p>
+
+<h2 class ="ex2"> Step 8</h2>
+<p class="ex1">Take the cake out of mold, circle the cake with plastic film. Pour in mascarpone cream, you can add cocoa powder on top to decorate. </p>
+
+<h2 class ="ex2"> Step 9</h2>
+<p class="ex1">Take out the plastic film and enjoy your cake.</p>
+
+</body>
+</html>
